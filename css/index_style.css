@@ -1,0 +1,248 @@
+html
+{
+    font-size: 16px !important;
+}
+#btnUp
+{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
+#navbar
+{
+    transition: background-color 1s;
+}
+.navbar .navbar-brand 
+{
+    font-size: 40px;
+}
+.navbar-nav .nav-link {
+    font-size: 1.2rem !important;
+}
+.navbar .navbar-toggler
+{
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    border: 2px solid #fff;
+}
+.navbar-toggler-icon
+{
+    background-color: #Fff;
+    width: 2.5rem;
+    height: 8px;
+    
+}
+@media (max-width:992px) {
+    .navbar .navbar-toggler {
+        display: flex;
+    }
+}
+/* .navbar-nav .nav-link {
+    font-size: 2rem !important;
+} */
+.img-item
+{
+    width: 20%;
+    float: left;
+    cursor: pointer;
+}
+body
+{
+    font-family: 'segoe ui light' !important ;
+}
+.text-sm
+{
+    font-size: 0.9rem;
+}
+
+nav::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    background-color: rgba(255,255,255,.1);
+    opacity: 0.7;
+    width: 90%;
+    height: 1px;
+}
+.text-opacity
+{
+    color: rgba(255,255,255,.65)!important;
+}
+.navbar-nav .nav-link
+{
+    color: #Fff;
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+header
+{
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.55);
+    height: 100%;
+}
+header h4
+{
+    position: relative;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+header h4::before
+{
+    content:"";
+    background-color: #fff;
+    right: 102%;
+    top: 50%;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+}
+
+@media (max-width:992px)
+{
+    header
+    {
+        height: 92vh;
+    }
+    header h4
+    {
+        transform: rotate(0deg);
+    }
+    #main-nav {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+#features i
+{
+    color: #f5ba4b!important;
+    font-size: 1.2rem;
+}
+#menu .nav-link
+{
+    color: #000;
+    font-weight: 700;
+}
+#menu .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent;
+    border-bottom: solid 1px #f5ba4b;
+    border-radius: 0;
+}
+.menu-item
+{
+    position: relative;
+}
+.menu-item:after
+{
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+    top: 100%;
+    left: 10%;
+    position: absolute;
+}
+
+#showing
+{
+    background-color: #343a40!important;
+}
+#services [class*=col-]
+{
+    padding-left:5px ;
+    padding-right: 5px;
+}
+#options
+{
+   
+    position: fixed;
+    left: -240px;
+    top: 150px;
+    z-index: 999999999;
+}
+#options i
+{
+    background-color: darkblue;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.colors-box
+{
+    background-color: #ccc;
+    border: solid 3px darkblue;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.colors-box .color-item
+{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    display: inline-block;
+}
+#options img
+{
+    width: 50px;
+   
+}
+
+.item
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.item-caption
+{
+    background-color: #fff;
+    padding: 10px;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+}
+
+#lightbox-container
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#lightbox-item
+{
+    width: 50%;
+    height: 70vh;
+    background-image: url(../images/portfolio-2.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#prev , #next , #close
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+#close
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
