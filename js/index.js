@@ -73,10 +73,6 @@ $('#menu ul li a').on('click', function(event) {
     event.preventDefault();
 
 });
-$('.navbar-toggler').on('click', function () {
-    $(this).toggleClass('collapsed');
-    $('#main-nav').toggleClass('show');
-})
 
 
 var lightboxContainer = document.getElementById("lightbox-container");
