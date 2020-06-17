@@ -27,7 +27,17 @@ $('a').click(function () {
     $('#main-nav').toggleClass('show');
 
 })
+$('#togglerBtn').on('click', function () {
 
+    $(".navbar").css({
+      backgroundColor: "#333",
+      boxShadow: "0px 6px 9px 0px rgba(0,0,0,.1)"
+    });
+    // $(".navbar .navbar-collapse ul li a::before").css("color", "#0078ff"); //Don't Work
+    $(".navbar-brand,.navbar-collapse ul li a").css("color", "#fff");
+    $(".navbar-toggler span").css("backgroundColor", "#1B1B1B");
+    $('.navbar-toggler-icon').css("backgroundColor", "#fff");
+  })
 
 let colorItem = $('.color-item');
 colorItem.eq(0).css("backgroundColor", "tomato");
